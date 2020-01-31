@@ -17,12 +17,6 @@ class PruebaController extends Controller
 	}
     
     public function index(){
-		if(env("APP_ENV") == "local"){
-			return "local";
-		}
-		if(env("APP_DEBUG")){
-			return "debug";
-		}
 		return sprintf("Hola bebe: %s", config("app.name"));
 	}
 }
