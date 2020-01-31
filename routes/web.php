@@ -12,3 +12,4 @@
 */
 
 $router->get('/', 'PruebaController@index');
+$router->get('/select', 'PruebaController@select');
